@@ -296,212 +296,415 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5" id="schedule-grid">
                     
                     <!-- Senin -->
-                    <div class="border border-blue-500/30 bg-blue-500/10 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] rounded-xl p-6 relative overflow-hidden group backdrop-blur-sm transition-all duration-300" data-day="1">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-blue-500 font-bold text-xl md:text-2xl flex items-center gap-2">
+                    <div class="border border-blue-500/30 bg-blue-500/5 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] rounded-xl p-5 relative overflow-hidden group backdrop-blur-md transition-all duration-300" data-day="1">
+                        <div class="flex justify-between items-start mb-4 border-b border-blue-500/20 pb-3">
+                            <h3 class="text-blue-500 font-bold text-xl flex items-center gap-2">
                                 <i class="fas fa-calendar-day"></i> Senin
                             </h3>
-                            <span class="text-sm font-mono border border-blue-500/30 bg-blue-500/10 px-2 py-1 rounded-full text-blue-500">Day 1</span>
+                            <span class="text-xs font-mono border border-blue-500/30 bg-blue-500/10 px-2 py-1 rounded-md text-blue-500 font-semibold shadow-sm">Day 1</span>
                         </div>
-                        <p class="text-sm text-gh-muted mb-5 font-mono">Commit: <span class="text-gh-strong">Start of week</span></p>
                         
-                        <ul class="space-y-4 text-base md:text-lg">
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-red-500 shadow-sm shadow-red-500/50"></div>
-                                <span class="font-semibold text-gh-strong">Upacara</span>
+                        <ul class="space-y-3.5">
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-slate-500 shadow-[0_0_8px_rgba(100,116,139,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-slate-400 transition-colors text-sm">Upacara Bendera</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1"><i class="fas fa-users text-[9px]"></i> Lapangan Utama</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:00 - 07:45</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-green-500 shadow-sm shadow-green-500/50"></div>
-                                <span class="font-semibold text-gh-strong">Penjaskes</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-blue-400 transition-colors text-sm">Penjaskes & OR</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Fadjar Haq Abdillah, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:45 - 10:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4 pl-7 border-l-2 border-blue-500/30 py-1 opacity-80">
-                                <i class="fas fa-mug-hot text-blue-400"></i>
-                                <span class="text-blue-400 italic">Istirahat</span>
+                            <!-- Divider Istirahat -->
+                            <li class="pl-3.5 py-1 border-l border-blue-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-mug-hot text-blue-400 text-xs animate-pulse"></i>
+                                    <span class="text-blue-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 1</span>
+                                    <span class="text-blue-400/70 font-mono text-[9px] ml-1">10:00 - 10:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></div>
-                                <span class="font-semibold text-gh-strong">B. Indo</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-blue-400 transition-colors text-sm flex flex-wrap items-center gap-2">
+                                        Dasar TJKT
+                                        <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-[9px] bg-blue-500/20 text-blue-500 border border-blue-500/30 px-1.5 py-0.5 rounded-full hover:bg-blue-500 hover:text-white transition-colors leading-none"><i class="fas fa-link"></i> Tech_Fund</a>
+                                    </span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Adi Adriyansyah, S.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 10:30 - 12:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-purple-500 shadow-sm shadow-purple-500/50"></div>
-                                <span class="font-semibold text-gh-strong">PAI</span>
+                            <li class="pl-3.5 py-1 border-l border-blue-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-utensils text-blue-400 text-xs animate-pulse"></i>
+                                    <span class="text-blue-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 2</span>
+                                    <span class="text-blue-400/70 font-mono text-[9px] ml-1">12:00 - 12:30</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-blue-400 transition-colors text-sm">Dasar TJKT <span class="text-xs font-normal opacity-70">(Lanjutan)</span></span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Adi Adriyansyah, S.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 12:30 - 13:15</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-blue-400 transition-colors text-sm">B. Indonesia</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Lina Darlina, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 13:15 - 15:30</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Selasa -->
-                    <div class="border border-orange-500/30 bg-orange-500/10 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)] rounded-xl p-6 relative overflow-hidden group backdrop-blur-sm transition-all duration-300" data-day="2">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-orange-500 font-bold text-xl md:text-2xl flex items-center gap-2">
+                    <div class="border border-orange-500/30 bg-orange-500/5 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.2)] rounded-xl p-5 relative overflow-hidden group backdrop-blur-md transition-all duration-300" data-day="2">
+                        <div class="flex justify-between items-start mb-4 border-b border-orange-500/20 pb-3">
+                            <h3 class="text-orange-500 font-bold text-xl flex items-center gap-2">
                                 <i class="fas fa-calendar-day"></i> Selasa
                             </h3>
-                            <span class="text-sm font-mono border border-orange-500/30 bg-orange-500/10 px-2 py-1 rounded-full text-orange-500">Day 2</span>
+                            <span class="text-xs font-mono border border-orange-500/30 bg-orange-500/10 px-2 py-1 rounded-md text-orange-500 font-semibold shadow-sm">Day 2</span>
                         </div>
                         
-                        <ul class="space-y-4 text-base md:text-lg mt-5">
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-yellow-500 shadow-sm shadow-yellow-500/50"></div>
-                                <span class="font-semibold text-gh-strong">Seni Budaya</span>
-                            </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></div>
-                                <div class="flex flex-col">
-                                    <span class="font-bold text-gh-strong">TJKT</span>
-                                    <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-xs text-orange-500 hover:text-orange-400 flex items-center gap-1 mt-0.5 opacity-90 hover:opacity-100 transition-opacity"><i class="fas fa-link"></i> Tech_Fund Material</a>
+                        <ul class="space-y-3.5">
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-orange-400 transition-colors text-sm">PPKn</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Ade Nani, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:00 - 08:30</span>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="flex items-center gap-4 pl-7 border-l-2 border-orange-500/30 py-1 opacity-80">
-                                <i class="fas fa-mug-hot text-orange-400"></i>
-                                <span class="text-orange-400 italic">Istirahat</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-orange-400 transition-colors text-sm">PAI</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Alwan Golur, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 08:30 - 10:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></div>
-                                <span class="font-bold text-gh-strong">TJKT</span>
+                            <li class="pl-3.5 py-1 border-l border-orange-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-mug-hot text-orange-400 text-xs animate-pulse"></i>
+                                    <span class="text-orange-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 1</span>
+                                    <span class="text-orange-400/70 font-mono text-[9px] ml-1">10:00 - 10:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4 pl-7 border-l-2 border-orange-500/30 py-1 opacity-80">
-                                <i class="fas fa-mug-hot text-orange-400"></i>
-                                <span class="text-orange-400 italic">Istirahat</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-orange-400 transition-colors text-sm">PAI <span class="text-xs font-normal opacity-70">(Lanjutan)</span></span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Alwan Golur, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 10:30 - 11:15</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></div>
-                                <span class="font-bold text-gh-strong">TJKT</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-orange-400 transition-colors text-sm">Rampak Bedug</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Elsa Widiastuti, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 11:15 - 12:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-orange-600 shadow-sm shadow-orange-600/50"></div>
-                                <span class="font-semibold text-gh-strong">Sejarah</span>
+                            <li class="pl-3.5 py-1 border-l border-orange-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-utensils text-orange-400 text-xs animate-pulse"></i>
+                                    <span class="text-orange-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 2</span>
+                                    <span class="text-orange-400/70 font-mono text-[9px] ml-1">12:00 - 12:30</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-orange-400 transition-colors text-sm">Rampak Bedug <span class="text-xs font-normal opacity-70">(Lanjutan)</span></span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Elsa Widiastuti, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 12:30 - 13:15</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-orange-400 transition-colors text-sm flex flex-wrap items-center gap-2">
+                                        Dasar TJKT
+                                        <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-[9px] bg-orange-500/20 text-orange-500 border border-orange-500/30 px-1.5 py-0.5 rounded-full hover:bg-orange-500 hover:text-white transition-colors leading-none"><i class="fas fa-link"></i> Tech_Fund</a>
+                                    </span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Ahmad Effendi, S.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 13:15 - 15:30</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Rabu -->
-                    <div class="border border-pink-500/30 bg-pink-500/10 hover:border-pink-500 hover:shadow-[0_0_20px_rgba(236,72,153,0.3)] rounded-xl p-6 relative overflow-hidden group backdrop-blur-sm transition-all duration-300" data-day="3">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-pink-500 font-bold text-xl md:text-2xl flex items-center gap-2">
+                    <div class="border border-pink-500/30 bg-pink-500/5 hover:border-pink-500 hover:shadow-[0_0_20px_rgba(236,72,153,0.2)] rounded-xl p-5 relative overflow-hidden group backdrop-blur-md transition-all duration-300" data-day="3">
+                        <div class="flex justify-between items-start mb-4 border-b border-pink-500/20 pb-3">
+                            <h3 class="text-pink-500 font-bold text-xl flex items-center gap-2">
                                 <i class="fas fa-calendar-day"></i> Rabu
                             </h3>
-                            <span class="text-sm font-mono border border-pink-500/30 bg-pink-500/10 px-2 py-1 rounded-full text-pink-500">Day 3</span>
+                            <span class="text-xs font-mono border border-pink-500/30 bg-pink-500/10 px-2 py-1 rounded-md text-pink-500 font-semibold shadow-sm">Day 3</span>
                         </div>
                         
-                        <ul class="space-y-4 text-base md:text-lg mt-5">
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></div>
-                                <div class="flex flex-col">
-                                    <span class="font-bold text-gh-strong">TJKT</span>
-                                    <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-xs text-pink-500 hover:text-pink-400 flex items-center gap-1 mt-0.5 opacity-90 hover:opacity-100 transition-opacity"><i class="fas fa-link"></i> Tech_Fund Material</a>
+                        <ul class="space-y-3.5">
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-pink-500 shadow-[0_0_8px_rgba(236,72,153,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-pink-400 transition-colors text-sm flex flex-wrap items-center gap-2">
+                                        Koding dan KA
+                                        <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-[9px] bg-pink-500/20 text-pink-500 border border-pink-500/30 px-1.5 py-0.5 rounded-full hover:bg-pink-500 hover:text-white transition-colors leading-none"><i class="fas fa-laptop-code"></i> Setup</a>
+                                    </span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Ahmad Barzanudin H, S.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:00 - 08:30</span>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="flex items-center gap-4 pl-7 border-l-2 border-pink-500/30 py-1 opacity-80">
-                                <i class="fas fa-mug-hot text-pink-400"></i>
-                                <span class="text-pink-400 italic">Istirahat</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-pink-500 shadow-[0_0_8px_rgba(236,72,153,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-pink-400 transition-colors text-sm">Seni Budaya</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Neni Aprianti K, S.Sn</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 08:30 - 10:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></div>
-                                <span class="font-bold text-gh-strong">TJKT</span>
+                            <li class="pl-3.5 py-1 border-l border-pink-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-pink-500/10 border border-pink-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-mug-hot text-pink-400 text-xs animate-pulse"></i>
+                                    <span class="text-pink-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 1</span>
+                                    <span class="text-pink-400/70 font-mono text-[9px] ml-1">10:00 - 10:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4 pl-7 border-l-2 border-pink-500/30 py-1 opacity-80">
-                                <i class="fas fa-mug-hot text-pink-400"></i>
-                                <span class="text-pink-400 italic">Istirahat</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-pink-500 shadow-[0_0_8px_rgba(236,72,153,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-pink-400 transition-colors text-sm">Poyek IPA/IPS</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Dini Maryani, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 10:30 - 12:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-pink-600 shadow-sm shadow-pink-600/50"></div>
-                                <span class="font-semibold text-gh-strong">Rampak Bedug</span>
+                            <li class="pl-3.5 py-1 border-l border-pink-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-pink-500/10 border border-pink-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-utensils text-pink-400 text-xs animate-pulse"></i>
+                                    <span class="text-pink-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 2</span>
+                                    <span class="text-pink-400/70 font-mono text-[9px] ml-1">12:00 - 12:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-teal-500 shadow-sm shadow-teal-500/50"></div>
-                                <span class="font-semibold text-gh-strong">Pembinaan Karakter</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-pink-500 shadow-[0_0_8px_rgba(236,72,153,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-pink-400 transition-colors text-sm">Poyek IPA/IPS <span class="text-xs font-normal opacity-70">(Lanjutan)</span></span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Dini Maryani, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 12:30 - 14:00</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Kamis -->
-                    <div class="border border-cyan-500/30 bg-cyan-500/10 hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] rounded-xl p-6 relative overflow-hidden group backdrop-blur-sm transition-all duration-300" data-day="4">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-cyan-500 font-bold text-xl md:text-2xl flex items-center gap-2">
+                    <div class="border border-cyan-500/30 bg-cyan-500/5 hover:border-cyan-500 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)] rounded-xl p-5 relative overflow-hidden group backdrop-blur-md transition-all duration-300" data-day="4">
+                        <div class="flex justify-between items-start mb-4 border-b border-cyan-500/20 pb-3">
+                            <h3 class="text-cyan-500 font-bold text-xl flex items-center gap-2">
                                 <i class="fas fa-calendar-day"></i> Kamis
                             </h3>
-                            <span class="text-sm font-mono border border-cyan-500/30 bg-cyan-500/10 px-2 py-1 rounded-full text-cyan-500">Day 4</span>
+                            <span class="text-xs font-mono border border-cyan-500/30 bg-cyan-500/10 px-2 py-1 rounded-md text-cyan-500 font-semibold shadow-sm">Day 4</span>
                         </div>
                         
-                        <ul class="space-y-4 text-base md:text-lg mt-5">
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-indigo-500 shadow-sm shadow-indigo-500/50"></div>
-                                <span class="font-mono bg-cyan-500/20 px-3 py-1 rounded text-cyan-700 dark:text-cyan-400 border border-cyan-500/30 font-bold">Coding dan KA</span>
+                        <ul class="space-y-3.5">
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-cyan-500 shadow-[0_0_8px_rgba(6,182,212,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-cyan-400 transition-colors text-sm flex flex-wrap items-center gap-2">
+                                        Dasar TJKT
+                                        <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-[9px] bg-cyan-500/20 text-cyan-500 border border-cyan-500/30 px-1.5 py-0.5 rounded-full hover:bg-cyan-500 hover:text-white transition-colors leading-none"><i class="fas fa-link"></i> Tech_Fund</a>
+                                    </span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Ahmad Effendi, S.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:00 - 10:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-red-500 shadow-sm shadow-red-500/50"></div>
-                                <span class="font-semibold text-gh-strong">PPKn</span>
+                            <li class="pl-3.5 py-1 border-l border-cyan-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-mug-hot text-cyan-400 text-xs animate-pulse"></i>
+                                    <span class="text-cyan-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 1</span>
+                                    <span class="text-cyan-400/70 font-mono text-[9px] ml-1">10:00 - 10:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4 pl-7 border-l-2 border-cyan-500/30 py-1 opacity-80">
-                                <i class="fas fa-mug-hot text-cyan-400"></i>
-                                <span class="text-cyan-400 italic">Istirahat</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-cyan-500 shadow-[0_0_8px_rgba(6,182,212,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-cyan-400 transition-colors text-sm">Informatika</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-laptop-code text-[9px]"></i> LAB TIK - Enting, M.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 10:30 - 12:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-cyan-400 shadow-sm shadow-cyan-400/50"></div>
-                                <span class="font-semibold text-gh-strong">MTK</span>
+                            <li class="pl-3.5 py-1 border-l border-cyan-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-utensils text-cyan-400 text-xs animate-pulse"></i>
+                                    <span class="text-cyan-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 2</span>
+                                    <span class="text-cyan-400/70 font-mono text-[9px] ml-1">12:00 - 12:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-lime-500 shadow-sm shadow-lime-500/50"></div>
-                                <span class="font-semibold text-gh-strong">Kokurikuler</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-cyan-500 shadow-[0_0_8px_rgba(6,182,212,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-cyan-400 transition-colors text-sm">Sejarah</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Dini Herawati, S.Pd</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 12:30 - 14:00</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Jumat -->
-                    <div class="border border-emerald-500/30 bg-emerald-500/10 hover:border-emerald-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] rounded-xl p-6 relative overflow-hidden group backdrop-blur-sm transition-all duration-300" data-day="5">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-emerald-500 font-bold text-xl md:text-2xl flex items-center gap-2">
+                    <div class="border border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] rounded-xl p-5 relative overflow-hidden group backdrop-blur-md transition-all duration-300" data-day="5">
+                        <div class="flex justify-between items-start mb-4 border-b border-emerald-500/20 pb-3">
+                            <h3 class="text-emerald-500 font-bold text-xl flex items-center gap-2">
                                 <i class="fas fa-calendar-day"></i> Jumat
                             </h3>
-                            <span class="text-sm font-mono border border-emerald-500/30 bg-emerald-500/10 px-2 py-1 rounded-full text-emerald-500">Day 5</span>
+                            <span class="text-xs font-mono border border-emerald-500/30 bg-emerald-500/10 px-2 py-1 rounded-md text-emerald-500 font-semibold shadow-sm">Day 5</span>
                         </div>
-                        <p class="text-sm mb-5 font-mono text-emerald-700 dark:text-emerald-400 bg-emerald-500/20 inline-block px-3 py-1.5 rounded border border-emerald-500/30">Merge branch 'weekend'</p>
 
-                        <ul class="space-y-4 text-base md:text-lg">
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-green-500 shadow-sm shadow-green-500/50"></div>
-                                <span class="line-through text-emerald-600/70 dark:text-emerald-400/70 group-hover:no-underline group-hover:text-gh-strong transition-all font-semibold">Opsih</span>
+                        <ul class="space-y-3.5">
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-emerald-400 transition-colors text-sm">Opsih</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-broom text-[9px]"></i> Area Kelas</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:00 - 07:45</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-blue-400 shadow-sm shadow-blue-400/50"></div>
-                                <span class="font-semibold text-gh-strong">B. Inggris</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-emerald-400 transition-colors text-sm flex flex-wrap items-center gap-2">
+                                        Dasar TJKT
+                                        <a href="https://nizhamcode.github.io/Tech_Fund/" target="_blank" class="text-[9px] bg-emerald-500/20 text-emerald-500 border border-emerald-500/30 px-1.5 py-0.5 rounded-full hover:bg-emerald-500 hover:text-white transition-colors leading-none"><i class="fas fa-link"></i> Tech_Fund</a>
+                                    </span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Adi Adriyansyah, S.Kom</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 07:45 - 10:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-purple-500 shadow-sm shadow-purple-500/50"></div>
-                                <span class="font-semibold text-gh-strong">TIK</span>
+                            <li class="pl-3.5 py-1 border-l border-emerald-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-mug-hot text-emerald-400 text-xs animate-pulse"></i>
+                                    <span class="text-emerald-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 1</span>
+                                    <span class="text-emerald-400/70 font-mono text-[9px] ml-1">10:00 - 10:30</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-emerald-500 shadow-sm shadow-emerald-500/50"></div>
-                                <span class="font-semibold text-gh-strong">Proyek IPAS</span>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-emerald-400 transition-colors text-sm">Matematika</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Indah Kusumawati, S.Si</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 10:30 - 12:00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4">
-                                <div class="w-3.5 h-3.5 rounded-full bg-yellow-600 shadow-sm shadow-yellow-600/50"></div>
-                                <span class="font-semibold text-gh-strong">IPS</span>
+                            <li class="pl-3.5 py-1 border-l border-emerald-500/30 ml-[4px]">
+                                <div class="flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded md px-2 py-1 w-fit shadow-sm">
+                                    <i class="fas fa-mosque text-emerald-400 text-xs animate-pulse"></i>
+                                    <span class="text-emerald-400 font-mono text-[10px] font-bold tracking-wider">ISTIRAHAT 2</span>
+                                    <span class="text-emerald-400/70 font-mono text-[9px] ml-1">12:00 - 12:30</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-emerald-400 transition-colors text-sm">Matematika <span class="text-xs font-normal opacity-70">(Lanjutan)</span></span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Indah Kusumawati, S.Si</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 12:30 - 14:00</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 group/item relative hover:translate-x-1 transition-transform">
+                                <div class="w-2.5 h-2.5 mt-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] shrink-0"></div>
+                                <div class="flex flex-col w-full gap-1">
+                                    <span class="font-bold text-gh-strong group-hover/item:text-emerald-400 transition-colors text-sm">B. Inggris</span>
+                                    <div class="flex justify-between items-end w-full">
+                                        <span class="text-[11px] text-gh-muted opacity-90 flex items-center gap-1 truncate"><i class="fas fa-user-tie text-[9px]"></i> Wini Marttrianti, S.S</span>
+                                        <span class="text-[10px] font-mono text-gh-muted bg-gh-border/20 border border-gh-border/50 px-1.5 py-0.5 rounded flex items-center gap-1 shrink-0"><i class="far fa-clock"></i> 14:00 - 15:30</span>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Sabtu (Baru) -->
-                    <div class="border border-purple-500/30 bg-purple-500/10 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] rounded-xl p-6 relative overflow-hidden group backdrop-blur-sm transition-all duration-300" data-day="6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-purple-500 font-bold text-xl md:text-2xl flex items-center gap-2">
+                    <!-- Sabtu (Extra) -->
+                    <div class="border border-purple-500/30 bg-purple-500/5 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] rounded-xl p-5 relative overflow-hidden group backdrop-blur-md transition-all duration-300" data-day="6">
+                        <div class="flex justify-between items-start mb-4 border-b border-purple-500/20 pb-3">
+                            <h3 class="text-purple-500 font-bold text-xl flex items-center gap-2">
                                 <i class="fas fa-calendar-day"></i> Sabtu
                             </h3>
-                            <span class="text-sm font-mono border border-purple-500/30 bg-purple-500/10 px-2 py-1 rounded-full text-purple-500 font-semibold">Day 6 (Bonus)</span>
+                            <span class="text-xs font-mono border border-purple-500/30 bg-purple-500/10 px-2 py-1 rounded-md text-purple-500 font-semibold shadow-sm">Day 6 (Bonus)</span>
                         </div>
-                        <p class="text-sm text-purple-700/70 dark:text-purple-400/70 mb-5 font-mono">Commit: <span class="text-gh-strong">Extra Development</span></p>
+                        
+                        <p class="text-[11px] text-purple-700/70 dark:text-purple-400/70 mb-5 font-mono">Commit: <span class="text-gh-strong">Extra Development</span></p>
 
-                        <ul class="space-y-5 text-base md:text-lg">
-                            <li class="flex items-center gap-4 bg-purple-500/10 p-3 rounded-xl border border-purple-500/20 shadow-sm hover:bg-purple-500/20 transition-colors">
-                                <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-orange-500/20 text-orange-500 shadow-sm">
-                                    <i class="fas fa-running text-xl"></i>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 bg-purple-500/10 p-3.5 rounded-xl border border-purple-500/20 shadow-sm hover:bg-purple-500/20 hover:scale-[1.02] transition-all cursor-pointer">
+                                <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-orange-500/20 text-orange-500 shadow-sm shrink-0">
+                                    <i class="fas fa-running text-lg"></i>
                                 </div>
-                                <span class="font-bold text-gh-strong">Ekstrakurikuler</span>
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-gh-strong text-sm">Ekstrakurikuler</span>
+                                    <span class="text-[11px] text-gh-muted mt-0.5">Pengembangan Bakat Siswa</span>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-4 bg-purple-500/10 p-3 rounded-xl border border-purple-500/20 shadow-sm hover:bg-purple-500/20 transition-colors">
-                                <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-green-500/20 text-green-500 shadow-sm">
-                                    <i class="fas fa-book-open text-xl"></i>
+                            <li class="flex items-center gap-4 bg-purple-500/10 p-3.5 rounded-xl border border-purple-500/20 shadow-sm hover:bg-purple-500/20 hover:scale-[1.02] transition-all cursor-pointer">
+                                <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-green-500/20 text-green-500 shadow-sm shrink-0">
+                                    <i class="fas fa-book-open text-lg"></i>
                                 </div>
-                                <span class="font-bold text-gh-strong">Kajian Islam</span>
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-gh-strong text-sm">Kajian Islam</span>
+                                    <span class="text-[11px] text-gh-muted mt-0.5">Pembinaan Kerohanian</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
