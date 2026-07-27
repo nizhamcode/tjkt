@@ -274,4 +274,7 @@ https://github.com/nizhamcode
 
 Made with ❤️ by **NizhamCode**
 
+<img data-importer="snake" src="https://raw.githubusercontent.com/nizhamcode/nizhamcode/snake-output/snake.svg" alt="Snake animation" />
+
+###
 </div>
