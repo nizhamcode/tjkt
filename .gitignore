@@ -1,0 +1,37 @@
+# Node
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Environment
+.env
+
+# Build
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary
+tmp/
+temp/
+
+# Coverage
+coverage/
+
+# npm
+package-lock.json
